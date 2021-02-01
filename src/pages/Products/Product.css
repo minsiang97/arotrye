@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.product-page {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.product-page h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center
+}
+
+.product-card {
+    border: none;
+}
+
+.card-image-div{
+    overflow: hidden;
+    max-width: 90%;
+    margin: auto;
+}
+
+.product-image{
+    transition: .5s all ease-in-out;
+    width: 100%;
+}
+
+.product-image:hover {
+    transform: scale(1.2);
+}

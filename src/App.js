@@ -1,24 +1,27 @@
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import WebNavbar from './components/Navbar/Navbar';
+import Homepage from './pages/Homepage/Homepage';
+import Footer from './components/Footer/Footer';
+import {ToastContainer} from 'react-toastify'
+import {Switch, Route} from 'react-router-dom'
+import 'react-toastify/dist/ReactToastify.css';
+import Products from './pages/Products/Products';
+import ContactUs from './pages/Contact/Contact'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ToastContainer/>
+    <WebNavbar/>
+    <Switch>
+      <Route exact path="/"><Homepage/></Route>
+      <Route path="/products"><Products/></Route>
+      <Route path='/contact'><ContactUs/></Route>
+    </Switch>
+    <Footer/>
+    </>
   );
 }
 

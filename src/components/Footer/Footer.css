@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.footer {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 5%;
+}
+
+.footer-title {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.footer-form input{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-form textarea{
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.footer-form input, .footer-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px lightgray solid;
+}
+
+.contact-anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-anchor:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+@media (max-width: 991px) and (min-width:768px){
+    .footer-row{
+        justify-content: center;
+    }
+}

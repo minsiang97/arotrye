@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.carousel-indicators .active{
+    background-color: black;
+    border: 2px black solid;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+  }
+  
+
+.carousel-indicators li {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px black solid;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+}
+  
+
+.carousel-indicators{
+    text-align: right;
+    float: right;
+    right: 0 !important;
+    left: inherit;
+    bottom: 20px;
+}
+  
+
+.carousel-item {
+    margin-bottom: 20px;
+}
+
+.carousel-content h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.product-title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.product-container {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.step-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.step-title {
+    font-weight: 700;
+}
+
+.step-col {
+    position: relative;
+    padding-left: 20px;
+}
+
+.step-col h1 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+}
+
+.step-container img {
+    width: 80%;
+}
+
+.product-card {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1440px) and (min-width:1199px) {
+    .step-col h1{
+        margin-top: 50px;
+    }
+
+    .step-container img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px){
+    .step-container img {
+        width: 100%;
+    }
+
+    .step-col h1{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px){
+    .step-col h1{
+        margin-top: 0;
+    }
+
+    .step-container img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:426px){
+    .step-container h1 {
+        text-align: center;
+    }
+}
+
+.how-section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.how-section h1 {
+    text-align: center;
+    
+}
+
+.how-col div {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    text-align: center;
+    z-index: 2;
+    color: white;    
+}
+
+.how-col {
+    margin-bottom: 30px;
+}
+
+.how-col h3, .how-col h4 {
+    margin-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.how-col h3 {
+    font-weight: 600;
+    margin: auto;
+}
+
+.how-col2 div {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    z-index: 2;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.7);   
+    width: 300px;
+    border-radius: 8px;
+    padding-top: 8px;
+}
+
+.how-col2 h3 {
+    font-weight: 600;
+    margin: auto;
+}
+
+.how-col2 {
+    margin-bottom: 30px;
+}
+
+.how-col2 h3, .how-col2 h4 {
+    margin-left: 10px;
+}
+
+.how-col3 {
+    margin-bottom: 30px;
+}
+
+.how-col3 h3 {
+    font-weight: 600;
+    margin: auto;
+}
+
+.how-col3 h3, .how-col3 h4 {
+    margin-left: 10px;
+}
+
+.how-col3 div {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    z-index: 2;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.7);   
+    width: 330px;
+    padding-top: 8px;
+    border-radius: 8px;
+}
+
+.lazada {
+    margin: auto;
+    max-width: 15%;
+}
+
+.whatsapp {
+    max-width: 15%;
+}
+
+@media (max-width:1025px) and (min-width:991px){
+    .step-col h1 {
+        font-size: 190%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:990px) and (min-width: 801px){
+    .step-col h1 {
+        font-size: 220%;
+        margin-top: 55px;
+    }
+}
+
+
+@media (max-width:1025px) and (min-width:801px){
+    .how-col3 div {
+        width: 250px;
+    }
+
+    .how-col3 h3 {
+        font-size: 130%;
+    }
+
+    .how-col3 h4 {
+        font-size: 110%;
+    }
+
+    .how-col2 div {
+        width: 230px;
+    }
+
+    .how-col2 h3 {
+        font-size: 130%;
+    }
+
+    .how-col2 h4 {
+        font-size: 110%;
+    }
+
+    .how-col div {
+        bottom: 25px;
+    }
+
+    .how-col h3 {
+        font-size: 130%;
+    }
+
+    .how-col h4 {
+        font-size: 110%;
+        margin: auto;
+    }
+
+    .step-container img {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) and (min-width:576px){
+    .how-col3 div {
+        width: 200px;
+    }
+
+    .how-col3 h3 {
+        font-size: 100%;
+    }
+
+    .how-col3 h4 {
+        font-size: 90%;
+    }
+
+    .how-col2 div {
+        width: 195px;
+    }
+
+    .how-col2 h3 {
+        font-size: 100%;
+    }
+
+    .how-col2 h4 {
+        font-size: 90%;
+    }
+
+    .how-col div {
+        bottom: 25px;
+    }
+
+    .how-col h3 {
+        font-size: 100%;
+    }
+
+    .how-col h4 {
+        font-size: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width:800px) and (min-width:768px){
+    .step-col h1 {
+        font-size: 200%;
+        margin-top: 40px;
+    }
+
+    .step-container img {
+        width: 100%;
+    }
+
+    .step-title {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 767px){
+    .step-col h1 {
+        font-size: 200%;
+        margin-top: 35px;
+    }
+}
+
+@media(max-width:576px){
+    .step-container img{
+        width: 70%;
+    }
+
+    .step-col h1 {
+        text-align: center;
+    }
+
+    .product-container {
+        margin-top: 50px;
+    }
+
+    .carousel-indicators{
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:321px){
+    .how-col3 div {
+        width: 250px;
+    }
+
+    .how-col3 h3 {
+        font-size: 130%;
+    }
+
+    .how-col3 h4 {
+        font-size: 110%;
+    }
+
+    .how-col2 div {
+        width: 230px;
+    }
+
+    .how-col2 h3 {
+        font-size: 130%;
+    }
+
+    .how-col2 h4 {
+        font-size: 110%;
+    }
+
+    .how-col div {
+        bottom: 25px;
+    }
+
+    .how-col h3 {
+        font-size: 130%;
+    }
+
+    .how-col h4 {
+        font-size: 110%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 377px){
+    .step-container h1 {
+        font-size: 170%
+    }
+}
+
+@media(max-width: 426px){
+    .step-container h2 {
+        font-size: 170%;
+    }
+
+    .whatsapp {
+        max-width: 25%;
+    }
+
+    .lazada {
+        max-width: 25%;
+    }
+}
+
+
+

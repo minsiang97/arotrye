@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.contact-container {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.company-name {
+    font-size: 150%;
+}
+
+.contact-container input {
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-container textarea{
+    height: 200px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.contact-button {
+    height: 50px;
+}
+
+.email {
+    padding-left: 0;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.contact-container a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width:576px){
+    .email {
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    padding-top: 10px;
+}
+
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;   
+}
+
+.title {
+    text-decoration: none;
+    color: black;
+}
+
+.title:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 767px){
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .title {
+        position: relative;
+        right: 50%;
+        transform: translate(50%,20%);
+    }
+}
+
