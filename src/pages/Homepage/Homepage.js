@@ -141,7 +141,7 @@ const Homepage = () => {
         </Container>
 
         <Container fluid className="step-container bg-light">
-            <Row className="justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="center-bottom" >
+            <Row className="justify-content-center" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor-placement="center-bottom" >
                 <Col lg={7} sm={10} xs={12} className="step-col-1">
                     <h1 className="mb-5 text-center step-title">Join Us Now</h1>
                     <Row className="justify-content-center mb-5">
@@ -166,7 +166,7 @@ const Homepage = () => {
         </Container>
 
         <Container fluid className="step-container bg-light">
-            <Row className="justify-content-center" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="center-bottom">
+            <Row className="justify-content-center" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor-placement="center-bottom">
                 <Col lg={7} xs={12}>
                     <h1 className="step-title text-center">How to Purchase</h1>
                     <Row className="mt-5">
