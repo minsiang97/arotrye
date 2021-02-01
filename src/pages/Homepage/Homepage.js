@@ -166,7 +166,7 @@ const Homepage = () => {
         </Container>
 
         <Container fluid className="step-container bg-light">
-            <Row className="justify-content-center" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor-placement="center-bottom">
+            <Row className="justify-content-center" data-aos="fade-up" data-aos-delay="1500" data-aos-anchor-placement="center-bottom">
                 <Col lg={7} xs={12}>
                     <h1 className="step-title text-center">How to Purchase</h1>
                     <Row className="mt-5">
