@@ -21,6 +21,10 @@
     color: black;
 }
 
+.logo{
+    text-align: center;
+}
+
 @media (max-width: 767px){
     .navbar {
         display: flex;

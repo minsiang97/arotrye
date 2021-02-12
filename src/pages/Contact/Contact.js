@@ -6,6 +6,7 @@ import {FaWhatsapp} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import emailjs from 'emailjs-com';
 import {toast} from 'react-toastify'
+import qr from '../../images/qr.png'
 import './Contact.css'
 
 const ContactUs = () => {
@@ -85,7 +86,7 @@ const ContactUs = () => {
                     <p className="company-name">AROTRYE SDN BHD</p>
                     <Row>
                         <Col>
-                            <FaWhatsapp size={30}></FaWhatsapp>
+                            <a href="https://wa.link/fd3laz" target="blank"><FaWhatsapp size={30}></FaWhatsapp></a>
                             <span className="ml-3 phone-number">+6016-5283678</span>
                         </Col>
                     </Row>

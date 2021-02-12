@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .carousel-indicators .active{
     background-color: black;
@@ -32,9 +35,73 @@
     margin-bottom: 20px;
 }
 
-.carousel-content h1{
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+.shop-now-button {
+    z-index: 1;
+    position: relative;
+    font-family: inherit;
+    border: 2px solid rgb(138, 138, 138);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    font-size: 130%;
+    color: rgb(88, 88, 88); 
+    border-radius: 8px;
+}
+
+.shop-now-button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: rgb(88, 88, 88);
+    transform-origin: center;
+    transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+    
+}
+
+.shop-now-button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.shop-now-button:hover::before {
+    transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
+}
+
+.shop-now-anchor{
+    text-decoration: none;
+}
+
+.carousel-content1 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.carousel-content {
+    background-color: rgb(243, 244, 252);
+}
+
+.carousel-content h1{   
+    font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-row{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.brand-description {
+    font-size: 200%;
 }
 
 .product-title {
@@ -207,6 +274,7 @@
 
 .whatsapp {
     max-width: 15%;
+    margin-right: 20px;
 }
 
 @media (max-width:1025px) and (min-width:991px){
@@ -346,6 +414,13 @@
         bottom: 0;
         left: 0;
         margin-bottom: 0;
+    }
+
+    .carousel-row{
+        position: relative;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
