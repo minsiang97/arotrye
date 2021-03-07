@@ -35,41 +35,94 @@
     margin-bottom: 20px;
 }
 
-.shop-now-button {
-    z-index: 1;
-    position: relative;
-    font-family: inherit;
-    border: 2px solid rgb(138, 138, 138);
-    overflow: hidden;
-    transition: color 0.4s ease-in-out;
-    font-size: 130%;
-    color: rgb(88, 88, 88); 
-    border-radius: 8px;
-}
-
-.shop-now-button::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    bottom: 100%;
-    right: 100%;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background-color: rgb(88, 88, 88);
-    transform-origin: center;
-    transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.45s ease-in-out;
-    
-}
-
-.shop-now-button:hover {
+.learn-more {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
     cursor: pointer;
-    color: white;
-}
+    margin: 5px;
+  }
+  
+  .learn-more span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
 
-.shop-now-button:hover::before {
-    transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
+  .learn-more:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  .learn-more span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .learn-more:hover span {
+    padding-right: 25px;
+  }
+  
+  .learn-more:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .shop-now-button {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .shop-now-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .shop-now-button:hover {
+      background-color: rgb(48, 48, 48);
+      color: white;
+  }
+  
+  .shop-now-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .shop-now-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .shop-now-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.carousel-control-prev-icon{
+    visibility: hidden;
 }
 
 .shop-now-anchor{

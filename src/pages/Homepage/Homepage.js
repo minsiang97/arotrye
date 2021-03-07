@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import {Link} from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
@@ -32,7 +33,7 @@ const Homepage = () => {
 
     return (
     <>
-        <Carousel nextIcon="" prevIcon="" className="carousel">
+        <Carousel controls={false} className="carousel">
             <Carousel.Item interval={2000}>
                 <Row>
                     <Col sm={7} xs={12} className="carousel-content1">
@@ -47,7 +48,7 @@ const Homepage = () => {
                             <Col lg={9} xs={12}>
                                 <h1 className="brand">Ferrali</h1>
                                 <p className="brand-description">THE BEST TYRE YOU CAN FIND IN IPOH</p>
-                                <a href="https://www.lazada.com.my" target="blank" className="shop-now-anchor"><button className="btn shop-now-button">SHOP NOW</button></a>
+                                <a href="https://www.lazada.com.my" target="blank" className="shop-now-anchor"><button className="btn shop-now-button"><span>SHOP NOW</span></button></a>
                             </Col>
                             
                         </Row>
@@ -60,34 +61,15 @@ const Homepage = () => {
                         <img
                         className="d-block w-100"
                         src={wallpaper}
-                        alt="second slide"
+                        alt="First slide"
                         />
                     </Col>
                     <Col sm={5} xs={12} className="carousel-content">
                         <Row className="justify-content-center carousel-row">
-                            <Col lg={9} xs={12}>
-                                <h1 className="brand">Ferrali</h1>
-                                <p className="brand-description">THE BEST TYRE YOU CAN FIND IN IPOH</p>
-                            </Col>
-                            
-                        </Row>
-                    </Col>
-                </Row>
-            </Carousel.Item>
-            <Carousel.Item interval={2000}>
-                <Row>
-                    <Col sm={7} xs={12} className="carousel-content1">
-                        <img
-                        className="d-block w-100"
-                        src={wallpaper}
-                        alt="Third slide"
-                        />
-                    </Col>
-                    <Col sm={5} xs={12} className="carousel-content">
-                        <Row className="justify-content-center carousel-row">
-                            <Col lg={9} xs={12}>
-                                <h1 className="brand">Ferrali</h1>
-                                <p className="brand-description">THE BEST TYRE YOU CAN FIND IN IPOH</p>
+                            <Col lg={10} xs={12}>
+                                <h1 className="brand">FREE FOR LIFE PROMOTION</h1>
+                                <p className="brand-description">FREE ENGINE OIL FOR THE REST OF YOUR LIFE!!</p>
+                                <a href="https://www.lazada.com.my" target="blank" className="shop-now-anchor"><button className="btn shop-now-button"><span>Learn More</span></button></a>
                             </Col>
                             
                         </Row>
@@ -239,6 +221,11 @@ const Homepage = () => {
                         <h3>Free Engine Oil For Life</h3>
                         <h4>Giving profits to member</h4>
                     </div>
+                </Col>
+            </Row>
+            <Row className="justify-content-center mt-3">
+                <Col sm={3} xs={12} className="text-center">
+                <a href="https://www.lazada.com.my" target="blank" className="shop-now-anchor"><button className="btn learn-more"><span>Learn More</span></button></a>
                 </Col>
             </Row>
         </Container>
