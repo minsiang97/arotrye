@@ -342,6 +342,20 @@
         font-size: 220%;
         margin-top: 55px;
     }
+
+    .brand {
+        font-size: 150%;
+    }
+
+    .brand-description {
+        font-size: 120%;
+    }
+
+    .shop-now-button {
+        font-size: 120%;
+        padding: 10px;
+        width: 40%;
+    }
 }
 
 
@@ -424,6 +438,20 @@
     .how-col h4 {
         font-size: 90%;
         margin: auto;
+    }
+
+    .brand {
+        font-size: 150%;
+    }
+
+    .brand-description {
+        font-size: 120%;
+    }
+
+    .shop-now-button {
+        font-size: 120%;
+        padding: 10px;
+        width: 50%;
     }
 }
 

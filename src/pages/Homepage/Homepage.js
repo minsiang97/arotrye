@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import wallpaper from '../../images/banner2.jpg' 
 import wallpaper2 from '../../images/wallpaper2.jpg'
+import poster from '../../images/poster2.jpg'
 import wallpaper3 from '../../images/wallpaper3.jpg'
 import tyre from '../../images/tyre.png'
 import cart from '../../images/cart.jpg'
@@ -60,8 +61,8 @@ const Homepage = () => {
                     <Col sm={7} xs={12} className="carousel-content1">
                         <img
                         className="d-block w-100"
-                        src={wallpaper}
-                        alt="First slide"
+                        src={poster}
+                        alt="Second slide"
                         />
                     </Col>
                     <Col sm={5} xs={12} className="carousel-content">
