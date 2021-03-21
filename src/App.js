@@ -9,6 +9,7 @@ import {Switch, Route} from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css';
 import Products from './pages/Products/Products';
 import ContactUs from './pages/Contact/Contact'
+import Promotion from './pages/Promotion/Promotion';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/"><Homepage/></Route>
       <Route path="/products"><Products/></Route>
       <Route path='/contact'><ContactUs/></Route>
+      <Route path='/promotion'><Promotion/></Route>
     </Switch>
     <Footer/>
     </>
