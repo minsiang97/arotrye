@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .promotion-div{
-    font-family: 'Bree Serif', serif;
-    background-color: rgb(189, 189, 189);
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+.stay-tuned {
+    background-image: url('../../images/stayTuned.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1000px;
+}
+
+.oil {
+    width: 20%
+}
+
+.left-arrow {
+    opacity: 0.3;
+}
+
+.left-arrow:hover {
+    opacity: 1.0;
+    cursor: pointer;
+    color:black
 }

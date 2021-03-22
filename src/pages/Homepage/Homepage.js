@@ -70,7 +70,7 @@ const Homepage = () => {
                             <Col lg={10} xs={12}>
                                 <h1 className="brand">FREE FOR LIFE PROMOTION</h1>
                                 <p className="brand-description">FREE ENGINE OIL FOR THE REST OF YOUR LIFE!!</p>
-                                <a href="https://www.lazada.com.my" target="blank" className="shop-now-anchor"><button className="btn shop-now-button"><span>Learn More</span></button></a>
+                                <Link to="/promotion" target="blank" className="shop-now-anchor"><button className="btn shop-now-button"><span>Learn More</span></button></Link>
                             </Col>
                             
                         </Row>
