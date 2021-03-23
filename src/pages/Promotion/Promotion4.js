@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, useViewportScroll, useTransform, motionValue } from "framer-motion"
 import {Link} from 'react-router-dom'
-import {ImArrowRight, ImArrowLeft} from 'react-icons/im'
+import {RiArrowLeftSLine, RiArrowRightSLine} from 'react-icons/ri'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -9,13 +9,12 @@ import poster from '../../images/poster2.jpg'
 import product from '../../images/promotion.png'
 import engine from '../../images/engineoil.png'
 import points from '../../images/points.PNG'
-import road from '../../images/road.jpg'
 import {FaEquals} from 'react-icons/fa'
 import crowd from '../../images/crowd.png'
 import oil from '../../images/oil.png'
 import "./Promotion.css"
 
-const Promotion = () => {
+const Promotion4 = () => {
     const scrollYProgress = motionValue(0)
     const { scrollY } = useViewportScroll()
     const scale = useTransform(scrollY, [0, 1], [0.2, 2])
@@ -79,50 +78,64 @@ const Promotion = () => {
 
 //     visiblePromotion1: {opacity: 1}
 //   };
-const pageVariants= {
-    initial: {
-        opacity: 0,
-        x: "100vw",
-        scale: 0.8
-    },
-    in: {
-        opacity: 1,
-        x:0,
-        scale: 1.0
-    },
-    out: {
-        opacity: 0,
-        x: "-100vw",
-        scale: 1.2
-    }
-}
 
-const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 1
-}
+    const pageVariants= {
+        initial: {
+            opacity: 0,
+            x: "100vw",
+            scale: 0.8
+        },
+        in: {
+            opacity: 1,
+            x:0,
+            scale: 1.0
+        },
+        out: {
+            opacity: 0,
+            x: "-100vw",
+            scale: 1.2
+        }
+    }
+
+    const pageTransition = {
+        type: "tween",
+        ease: "anticipate",
+        duration: 1
+    }
     return (
         <motion.div
-            style={{height: "90vh", position: "relative", backgroundImage: `url(${road})`, backgroundSize:"cover"}}
+            style={{height: "90vh", position: "relative"}}
             className="promotion-div"
         >
             <motion.div 
                 style={{ width: "100%", textAlign: "center", alignItems: "center", position: "absolute", top: "50%", translateY:"-50%"}}
-                variant={pageVariants}
-                initial={{opacity: 0, x: "100vw", scale: 0.8}}
-                animate={{opacity: 1, x: 0, scale: 1.0}}
-                exit={{opacity: 0, x: "-100vw", scale: 1.2}}
+                variants={pageVariants}
+                initial="initial"
+                animate="in"
+                exit="out"
                 transition={pageTransition}
             >
-               <p style={{fontSize: '400%', fontWeight: "600", color:"white"}}>You Must Be Wondering How We Can Do This ?</p>
-               <Link to="/promotion2"><button className="btn promotion-btn"><span>Click Here</span></button></Link>
+               <Container fluid>
+                   <Row className="justify-content-center">
+                       <Col md={8} className="text-center">
+                           <Row className="text-center">
+                                <p style={{fontSize: "250%"}} className="m-auto">NEXT, INTRODUCE 4 MEMBERS TO GET A TOTAL OF 8000 POINTS TO EXCHANGE FOR (4) 4T ENGINE OIL</p>
+                                <img src={points} className="w-75 promotion m-auto"></img>
+                           </Row>
+                       </Col>
+                       
+                   </Row>
+               </Container>
                
-               
-
             </motion.div>
+            <Link to="/promotion3"><motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.8 }} style={{position: "absolute", top: "50%", translateY:"-50%", left: 20}} className="left-arrow">
+                <RiArrowLeftSLine size={30} />
+            </motion.div></Link>
+            <Link to="/promotion5"><motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.8 }} style={{position: "absolute", top: "50%", translateY:"-50%", right: 20}} className="left-arrow">
+                <RiArrowRightSLine size={30} />
+            </motion.div></Link>
         </motion.div>
     )
 }
 
-export default Promotion
+export default Promotion4

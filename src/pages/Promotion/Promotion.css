@@ -3,16 +3,6 @@
 
 .promotion-div{
     font-family: 'Open Sans', sans-serif;
-    background-color: white;
-}
-
-.stay-tuned {
-    background-image: url('../../images/stayTuned.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 1000px;
 }
 
 .oil {
@@ -27,4 +17,86 @@
     opacity: 1.0;
     cursor: pointer;
     color:black
+}
+
+.tween {
+    font-family: 'Righteous', cursive;  
+    font-weight: normal; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 5px #000;
+    margin: auto;
+}
+
+.rocket {
+    animation: animate 0.2s ease infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+
+}
+
+.click {
+    font-size: 200%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    letter-spacing: 10px;
+    font-family: 'Righteous', cursive;  
+    font-weight: normal; 
+    text-transform: uppercase;
+    align-items: center; 
+}
+
+.button-link {
+    text-decoration: none;
+    color: black;
+}
+
+.button-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.arrow-right {
+    animation: right 1.5s ease infinite;
+}
+
+.arrow-left {
+    animation: left 1.5s ease infinite;
+}
+
+.promotion-btn{
+    border: 1px solid orange;
+    color: white;
+    height: 80px;
+    width: 20%;
+    font-size: 200%;
+}
+
+.promotion-btn:hover{
+    background-color: orange;
+}
+
+@keyframes right {
+    0%, 100%{
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+}
+
+@keyframes left {
+    0%, 100%{
+        transform: translateX(3px);
+    }
+    50% {
+        transform: translateX(-3px);
+    }
 }

@@ -13,6 +13,9 @@ import Promotion from './pages/Promotion/Promotion';
 import Promotion2 from './pages/Promotion/Promotion2'
 import {motion, AnimatePresence} from 'framer-motion'
 import Promotion3 from './pages/Promotion/Promotion3';
+import Promotion4 from './pages/Promotion/Promotion4';
+import Promotion5 from './pages/Promotion/Promotion5';
+import Promotion6 from './pages/Promotion/Promotion6';
 
 function App() {
   const location = useLocation()
@@ -28,6 +31,9 @@ function App() {
       <Route path='/promotion'><Promotion/></Route>
       <Route path='/promotion2'><Promotion2/></Route>
       <Route path='/promotion3'><Promotion3/></Route>
+      <Route path='/promotion4'><Promotion4/></Route>
+      <Route path='/promotion5'><Promotion5/></Route>
+      <Route path='/promotion6'><Promotion6/></Route>
     </Switch>
     </AnimatePresence>
     <Footer/>
