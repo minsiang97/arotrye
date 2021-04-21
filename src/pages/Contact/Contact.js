@@ -23,22 +23,27 @@ const ContactUs = () => {
           .then((result) => {
               console.log(result.text)
               toast.success("Enquiries Sent Successfully! Will get back to you as soon as possible", {
-                position: "top-right",
+                position: toast.POSITION.TOP_CENTER,
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
+              
             });
           }, (error) => {
               console.log(error.text);
           });
           e.target.reset()
+          setMessage("")
+          setName("")
+          setSubject("")
+          setEmail("")
         }
         else if (name == ""){
             toast.warn("Name cannot be blank", {
-                position: "top-right",
+                position: toast.POSITION.TOP_CENTER,
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -48,7 +53,7 @@ const ContactUs = () => {
             });
         } else if (email == ""){
             toast.warn("Email cannot be blank", {
-                position: "top-right",
+                position: toast.POSITION.TOP_CENTER,
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -58,7 +63,7 @@ const ContactUs = () => {
             });
         } else if (subject == ""){
             toast.warn("Subject cannot be blank", {
-                position: "top-right",
+                position: toast.POSITION.TOP_CENTER,
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -68,7 +73,7 @@ const ContactUs = () => {
             });
         } else if (message == ""){
             toast.warn("Message cannot be blank", {
-                position: "top-right",
+                position: toast.POSITION.TOP_CENTER,
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -78,6 +83,10 @@ const ContactUs = () => {
             });
         }
     }
+    console.log(name)
+    console.log(email)
+    console.log(message)
+    console.log(subject)
     return (
         <Container className="contact-container">
             <h1 className="text-center">Contact Us</h1>

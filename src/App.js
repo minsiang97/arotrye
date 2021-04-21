@@ -21,7 +21,7 @@ function App() {
   const location = useLocation()
   return (
     <>
-    <ToastContainer/>
+    <ToastContainer style={{width: 'auto', maxWidth: '1200px'}}/>
     <WebNavbar/>
     <AnimatePresence exitBeforeEnter>
     <Switch location={location} key={location.pathname}>
