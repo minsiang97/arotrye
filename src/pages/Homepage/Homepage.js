@@ -226,7 +226,7 @@ const Homepage = () => {
             </Row>
             <Row className="justify-content-center mt-3">
                 <Col sm={3} xs={12} className="text-center">
-                <a href="https://www.lazada.com.my" target="blank" className="shop-now-anchor"><button className="btn learn-more"><span>Learn More</span></button></a>
+                <a href="/promotion" className="shop-now-anchor"><button className="btn learn-more"><span>Learn More</span></button></a>
                 </Col>
             </Row>
         </Container>

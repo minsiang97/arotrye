@@ -3,6 +3,7 @@ import { motion, useViewportScroll, useTransform, motionValue } from "framer-mot
 import {Link} from 'react-router-dom'
 import {RiArrowLeftSLine, RiArrowRightSLine} from 'react-icons/ri'
 import { Controls, PlayState, Tween, SplitChars } from 'react-gsap';
+import road from '../../images/road.jpg'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -107,7 +108,7 @@ const Promotion6 = () => {
     }
     return (
         <motion.div
-            style={{height: "90vh", position: "relative"}}
+            style={{height: "90vh", position: "relative", backgroundImage: `url(${road})`, backgroundSize:"cover"}}
             className="promotion-div"
         >
             <motion.div 

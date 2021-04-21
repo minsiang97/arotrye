@@ -2,6 +2,7 @@ import React from 'react'
 import { motion, useViewportScroll, useTransform, motionValue } from "framer-motion"
 import {Link} from 'react-router-dom'
 import {RiArrowLeftSLine, RiArrowRightSLine} from 'react-icons/ri'
+import road from '../../images/road.jpg'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -104,7 +105,7 @@ const pageVariants= {
     }
     return (
         <motion.div
-            style={{height: "90vh", position: "relative"}}
+            style={{height: "90vh", position: "relative", backgroundImage: `url(${road})`, backgroundSize:"cover"}}
             className="promotion-div"
         >
             <motion.div 
@@ -115,8 +116,8 @@ const pageVariants= {
                 exit="out"
                 transition={pageTransition}
             >
-               <p style={{fontSize: '300%'}}>HOW TO GET FREE 4T ENGINE OIL FOR LIFE?</p>
-               <p style={{fontSize: '300%', width: "50%", margin: 'auto'}}>THROUGH OUR</p>
+               <p style={{fontSize: '300%', color: 'white'}}>HOW TO GET FREE 4T ENGINE OIL FOR LIFE?</p>
+               <p style={{fontSize: '300%', width: "50%", margin: 'auto', color: 'white'}}>THROUGH OUR</p>
                <p style={{fontSize: '300%', width: "50%", margin: 'auto', color: 'red'}}>FREE FOR LIFE PROMOTION PACKAGE</p>
                
             </motion.div>

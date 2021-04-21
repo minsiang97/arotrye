@@ -128,10 +128,10 @@ const Promotion4 = () => {
                </Container>
                
             </motion.div>
-            <Link to="/promotion3"><motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.8 }} style={{position: "absolute", top: "50%", translateY:"-50%", left: 20}} className="left-arrow">
+            <Link to="/promotion3"><motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.8 }} style={{position: "absolute", top: "50%", translateY:"-50%", left: 20}} className="left-arrow-black">
                 <RiArrowLeftSLine size={30} />
             </motion.div></Link>
-            <Link to="/promotion5"><motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.8 }} style={{position: "absolute", top: "50%", translateY:"-50%", right: 20}} className="left-arrow">
+            <Link to="/promotion5"><motion.div whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.8 }} style={{position: "absolute", top: "50%", translateY:"-50%", right: 20}} className="left-arrow-black">
                 <RiArrowRightSLine size={30} />
             </motion.div></Link>
         </motion.div>
